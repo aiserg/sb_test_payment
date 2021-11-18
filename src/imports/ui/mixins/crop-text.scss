@@ -1,0 +1,27 @@
+@mixin crop-text($line-height: 1.3, $top-adjustment: 0px, $bottom-adjustment: 0px) {
+  $top-crop: 8;
+  $bottom-crop: 8;
+  $crop-font-size: 36;
+  $crop-line-height: 1.2;
+
+  $dynamic-top-crop: max(($top-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+  $dynamic-bottom-crop: max(($bottom-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+
+  line-height: $line-height;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  &::before {
+    margin-bottom: calc(-#{$dynamic-top-crop}em + #{$top-adjustment});
+  }
+
+  &::after {
+    margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
+  }
+}

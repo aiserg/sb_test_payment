@@ -1,0 +1,57 @@
+@import '../../scentbird-colors.scss';
+
+.checkbox-billing-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-billing-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-billing-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: $white;
+  border: 1px $black solid;
+}
+
+.checkbox-billing-container input:checked~.checkbox-billing-checkmark {
+  background-color: $primary-background-color;
+  border-color: $primary-border-color;
+}
+
+.checkbox-billing-checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.checkbox-billing-container input:checked~.checkbox-billing-checkmark:after {
+  display: block;
+}
+
+.checkbox-billing-container .checkbox-billing-checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid $white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

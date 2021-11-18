@@ -1,0 +1,44 @@
+@import '../../mixins/crop-text.scss';
+@import '../../scentbird-colors.scss';
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: ProximaNova-Regular;
+  font-size: 36px;
+  height: 100%;
+  @media (max-width: 569px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+  }
+}
+
+.description__title {
+  @include crop-text;
+  font-family: ProximaNova-Regular;
+  font-size: 36px;
+  color: $black;
+  @media (max-width: 569px) {
+    padding-top: 0;
+    font-size: 7vw;
+  }
+}
+
+.description__subtitle {
+  font-size: 16px;
+  font-family: ProximaNova-Regular;
+  color: $primary-text;
+  padding-top: 13px;
+  padding-left: 2px;
+  line-height: 1.43;
+  @media (max-width: 569px) {
+    text-align: center;
+    line-height: normal;
+    width: 90%;
+    font-size: 5vw;
+  }
+}

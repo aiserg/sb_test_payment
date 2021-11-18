@@ -1,0 +1,433 @@
+@import '../../scentbird-colors.scss';
+
+.fields {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.create-account {
+  padding-top: 43px;
+}
+
+.create-account__title {
+  font-family: ProximaNova-Regular;
+  font-size: 24px;
+  line-height: 1.43;
+}
+
+.create-account__fields {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding-top: 6px;
+}
+
+.login-fields-plug {
+  margin-bottom: 105px;
+  @media (max-width: 569px) {
+    margin-bottom: 0;
+  }
+}
+
+.shipping-address {
+  @media (max-width: 569px) {
+    padding-top: 40px;
+  }
+}
+
+.shipping-address__title {
+  font-family: ProximaNova-Regular;
+  font-size: 24px;
+  line-height: 1.43;
+  @media (max-width: 569px) {
+    display: flex;
+    font-size: 6.2vw;
+    justify-content: center;
+    padding-bottom: 12px;
+  }
+}
+
+.shipping-address__fields {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  @media (max-width: 569px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.shipping-address__phone-description {
+  display: flex;
+  flex: 1;
+  font-size: 14px;
+  font-family: ProximaNova-Regular;
+  align-self: center;
+  justify-content: center;
+  padding: 10px 0px;
+  @media (max-width: 569px) {
+    display: none;
+  }
+}
+
+.billing-address {
+  padding-top: 40px;
+}
+
+.billing-address-switcher {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  @media (max-width: 569px) {
+    padding-top: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+} 
+
+.billing-address-switcher__label {
+  padding-top: 2px;
+  font-size: 14px;
+  opacity: 0.6;
+  font-family: ProximaNova-Regular;
+}
+
+.credit-card__info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  @media (max-width: 569px) {
+    flex: 4;
+  }
+}
+
+.credit-card__fields {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: $input-background;
+  padding: 21px 31px 20px 30px;
+  border: 1px $input-borer solid;
+  @media (max-width: 569px) {
+    padding: 0 0 18px 0;
+  }
+}
+
+.credit-card__fields__description {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: 569px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 13px;
+  }
+}
+
+.credit-card__fields__description-left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  @media (max-width: 569px) {
+    padding-bottom: 14px
+  }
+}
+
+.credit-card__fields__description-image {
+  display: flex;
+  height: 21px;
+  justify-content: flex-end;
+  @media (max-width: 569px) {
+    height: 7vw;
+  }
+}
+
+.credit-card__fields__secure-image {
+  width: 29px;
+  height: 35px;
+  padding-right: 10px;
+  @media (max-width: 569px) {
+    width: 8vw;
+    height: 100%;
+  }
+}
+
+.credit-card__fields__description-left-subtitle {
+  color: $credit-card-text;
+  opacity: 0.6;
+  font-family: ProximaNova-Semibold;
+  font-size: 14px;
+  @media (max-width: 569px) {
+    font-size: 3.8vw;
+    align-items: center;
+  }
+}
+
+.subscription-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  @media (max-width: 569px) {
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px
+  }
+}
+
+.subscription-form-buttons__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ProximaNova-Regular;
+  font-size: 18px;
+  color: $placeholder;
+  text-decoration: underline solid $placeholder;
+  height: 50px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.subscription-form-buttons__buy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  width: 248px;
+  background-color: $primary-background-color;
+  color: $white;
+  font-size: 18px;
+  font-family: ProximaNova-Semibold;
+  cursor: pointer;
+  @media (max-width: 569px) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.subscription-form-buttons__buy__arrow {
+  margin-right: 27px;
+  margin-left: 56px;
+  margin-top: 4px;
+  @media (max-width: 569px) {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+.custom-select {
+  display: flex;
+  flex: 1;
+}
+
+.custom-select-field {
+  display: flex;
+  flex: 1;
+  position: relative;
+  margin: 10px;
+  &:first-child {
+    margin-left: 0px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+  @media (max-width: 569px) {
+    margin: 0;
+    padding: 10px 14px;
+  }
+}
+
+.custom-select-field__arrow {
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  @media (max-width: 569px) {
+    display: none
+  }
+}
+
+.custom-select-field__select {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid $input-borer;
+  background-color: $input-background;
+  &:focus {
+    outline-width: 0;
+  }
+  padding: 14px 15px 14px 15px;
+  font-size: 18px;
+  font-family: ProximaNova-Regular;
+  color: $black;
+}
+
+.credit-card-fields__expiration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $placeholder;
+  padding-left: 22px;
+  @media (max-width: 569px) {
+    display: none;
+  }
+}
+
+.credit-card__fields__expiration {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 569px) {
+    display: flex;
+  }
+}
+
+.custom-select-field__billing {
+  display: flex;
+  flex: 1;
+  position: relative;
+  margin: 10px;
+  max-width: 141px;
+  &:first-child {
+    margin-left: 0px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+  @media (max-width: 569px) {
+    margin: 0;
+    max-width: 100%;
+    &:first-child {
+      padding-right: 8px;
+    }
+  }
+}
+
+.credit-card__title {
+  font-family: ProximaNova-Regular;
+  font-size: 24px;
+  line-height: 1.43;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  @media (max-width: 569px) {
+    display: flex;
+    flex: 1;
+    padding-top: 32px;
+    padding-bottom: 23px;
+    justify-content: center;
+    font-size: 6.3vw;
+  }
+}
+
+.credit-card__fields__card-number {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding-top: 10px;
+  @media (max-width: 569px) {
+    flex-direction: column;
+  }
+}
+
+.credit-card__fields__security-number {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  @media (min-width: 569px) {
+    &:nth-of-type(5) {
+      display: none;
+    }
+  }
+  @media (max-width: 569px) {
+    flex: 2;
+    &:nth-of-type(2) {
+      display: none;
+    }
+    &:nth-of-type(4) {
+      display: flex;
+      width: 100%
+    }
+  }
+}
+
+.credit-card__fields__card-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.credit-card__fields__card-secure {
+  font-family: Fontawesome;
+  font-size: 20px;
+  position: absolute;
+  right: 5%;
+  top: 28%;
+  margin: 0 auto;
+  color: $secure-lock;
+  @media (max-width: 569px) {
+    right: 8%;
+    top: 35%;
+    margin: 0 auto;
+  }
+}
+
+.credit-card__fields__exp {
+  display: flex;
+  flex: 1;
+  position: relative;
+  margin: 10px 5px;
+  max-width: 141px;
+  @media (max-width: 569px) {
+    margin: 10px 5px;
+    max-width: 100%;
+    &:first-child {
+      padding-right: 8px;
+    }
+  }
+}
+
+.shipping-address__zip-code {
+  display: flex;
+  flex: 1;
+  position: relative;
+  @media (max-width: 569px) {
+    margin: 0px;
+    padding: 10px 0;
+  }
+}
+
+.shipping-address__zip-code__done {
+  font-family: Fontawesome;
+  font-size: 18px;
+  position: absolute;
+  right: 14px;
+  top: 15px;
+  color: $primary-background-color;
+  opacity: 0.6;
+  @media (max-width: 569px) {
+    font-size: 18px;
+    right: 16px;
+    top: 37%;
+  }
+}
+
+@media (max-width: 569px) {
+  .offer-subscription {
+    display: none;
+  }
+  .create-account {
+    display: none;
+  }
+  .subscription-form-buttons__back {
+    display: none;
+  }
+  .subscription-form-buttons__buy__arrow {
+    display: none;
+  }
+}

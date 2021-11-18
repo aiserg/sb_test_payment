@@ -1,0 +1,64 @@
+@import '../../scentbird-colors.scss';
+
+.subscription-type {
+  padding-top: 30px;
+  @media (max-width: 569px) {
+    padding-top: 17px;
+  }
+}
+
+.subscription-type__title {
+  font-size: 31px;
+  line-height: 1.43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  @media (max-width: 569px) {
+    font-size: 6.2vw;
+  }
+}
+
+.subscription-type__images {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.subscription-type__images__image {
+  width: 120px;
+  @media (max-width: 569px) {
+    width: 23vw;
+  }
+}
+
+.subscription-type__images__title {
+  padding-top: 20px;
+  font-family: ProximaNova-Regular;
+  font-size: 38px;
+  @media (max-width: 569px) {
+    font-size: 7vw;
+    padding-top: 8px;
+  }
+}
+
+.subscription-type__images__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-type__error {
+  display: flex;
+  padding-top: 5px;
+  color: $text-error;
+  font-family: ProximaNova-Regular;
+  font-size: 18px;
+  justify-content: center;
+  @media (max-width: 569px) {
+    font-size: 3.7vw;
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.delivery-info {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 569px) {
+    padding: 0 15px;
+  }
+}
+
+.delivery-info__image {
+  padding-top: 25px;
+  max-width: 368px;
+  @media (max-width: 569px) {
+    max-width: 100vw;
+  }
+}
+
+.delivery-info__description {
+  padding-top: 26px;
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  line-height: 1.43;
+  @media (max-width: 569px) {
+    order: -1;
+    font-size: 5vw;
+    padding-top: 0;
+    line-height: normal;
+  }
+}

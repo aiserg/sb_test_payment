@@ -1,0 +1,29 @@
+.credit-card__fields__name-on-card {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-right: 5px;
+  @media (max-width: 569px) {
+    margin-right: 0;
+  }
+}
+
+.credit-card__exp__mobile {
+  @media (min-width: 569px) {
+    display: none;
+  }
+  @media (max-width: 569px) {
+    display: flex;
+    padding: 0 10px
+  }
+}
+
+.credit-card__fields__expiration-large {
+  @media (min-width: 569px) {
+    display: flex;
+    flex: 1;
+  }
+  @media (max-width: 569px) {
+    display: none;
+  }
+}

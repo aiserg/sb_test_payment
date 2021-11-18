@@ -1,0 +1,40 @@
+
+.payment {
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 1200px;
+  padding-bottom: 250px;
+  @media (max-width: 1200px) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  @media (max-width: 569px) {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 27px;
+  @media (max-width: 569px) {
+    padding-top: 0;
+  }
+}
+
+.content__subscription-form {
+  flex: 1;
+}
+
+
+@media (max-width: 569px) {
+  .content__subscription-form {
+    display: none;
+  }
+}

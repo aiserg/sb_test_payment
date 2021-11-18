@@ -1,0 +1,167 @@
+@import '../../scentbird-colors.scss';
+
+.product {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 400px;
+  margin-right: 68px;
+  @media (max-width: 569px) {
+    width: 100%;
+  }
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: $input-borer;
+  border-width: 1px;
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  padding-top: 22px;
+  padding-bottom: 41px;
+}
+
+.product__image {
+  flex: 1;
+  align-self: center;
+  padding-top: 17px;
+  @media (max-width: 569px) {
+    padding-top: 27px;
+  }
+}
+
+.product__image__inner {
+  @media (max-width: 569px) {
+    width: 11vw;
+  }
+}
+
+.product__price {
+  flex: 1;
+  align-items: stretch;
+  border-top-width: 1px;
+  border-top-color: $input-borer;
+  border-top-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: $input-borer;
+  border-bottom-style: solid;
+  margin-top: 42px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 20px;
+  @media (max-width: 569px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.product__price-description {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  &:last-child {
+    padding-bottom: 21px;
+  }
+  @media (max-width: 569px) {
+    font-size: 4.5vw;
+  }
+}
+
+.product__price-description__pink {
+  color: $primary-text;
+}
+
+.product__price-description__credit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.product__price-description__credit-label {
+  padding-right: 12px;
+}
+
+.product__price-total {
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 20px;
+  flex-direction: row;
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  @media (max-width: 569px) {
+    font-size: 5vw;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.product__price__coupon {
+  flex: 1;
+  align-items: stretch;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 28px;
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  @media (max-width: 569px) {
+    opacity: 0.6;
+    padding-top: 22px;
+    font-size: 5vw;
+    color: $black;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.product__price__coupon-offer {
+  cursor: pointer;
+  color: $primary-text;
+  border-bottom-width: 1px;
+  border-bottom-color: #979797;
+  border-bottom-style: dotted;
+  @media (max-width: 569px) {
+    opacity: 0.6;
+    color: $black;
+  }
+}
+
+.product__subscription-type {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 569px) {
+  .offer-product {
+    display: none;
+  }
+  .subscription-type {
+    display: none;
+  }
+  .product__fields {
+    display: none;
+  }
+}
+
+@media (max-width: 569px) {
+  .price {
+    border: none;
+  }
+  .product {
+    max-width: none;
+    margin-right: 0;
+  }
+}
+

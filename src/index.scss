@@ -1,0 +1,25 @@
+@font-face {
+  font-family: ProximaNova-Semibold;
+  src: url(./fonts/ProximaNova-Semibold.ttf);
+}
+
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url(./fonts/ProximaNova-Regular.ttf);
+}
+
+@font-face {
+  font-family: Fontawesome;
+  src: url(./fonts/fontawesome-webfont.ttf);
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: sans-serif;
+  @media (max-width: 569px) {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

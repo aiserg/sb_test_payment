@@ -1,0 +1,90 @@
+@import '../../scentbird-colors.scss';
+
+input {
+  &:focus {
+    outline-width: 0;
+    background-color: $white;
+  }
+  &::placeholder {
+    color: $placeholder;
+    font-size: 18px;
+  }
+  background-color: $input-background;
+  border: 1px solid $input-borer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-field {
+  flex: 1;
+  padding: 14px 15px;
+  font-size: 16px;
+  font-family: ProximaNova-Regular;
+  color: $black;
+}
+
+.input-field__error {
+  flex: 1;
+  padding: 14px 15px;
+  font-size: 16px;
+  font-family: ProximaNova-Regular;
+  outline: 2px solid $text-error-lite;
+  &:focus {
+    border: solid 1px rgba(255, 69, 143, 0.6);
+  }
+}
+
+.label {
+  position: absolute;
+  top: -7px;
+  color: $placeholder;
+  background: linear-gradient(to top, $white 70%, transparent 50%);
+  margin-left: 14px;
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  @media (max-width: 569px) {
+    top: 1px;
+  }
+}
+
+.input-inner-container {
+  display: flex;
+  flex: 1;
+}
+
+.input-container {
+  display: flex;
+  flex: 1;
+  position: relative;
+  margin: 10px;
+  &:first-child {
+    margin-left: 0px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+  @media (max-width: 569px) {
+    margin: 0px;
+    padding: 10px 14px;
+  }
+}
+
+.error-text {
+  position: absolute;
+  top: 54px;
+  color: $text-error;
+  font-family: ProximaNova-Regular;
+  font-size: 11px;
+  @media (max-width: 569px) {
+    display: none;
+  }
+}
+
+.error-container {
+  outline: 2px solid $text-error-lite;
+  outline-offset: -1px;
+}

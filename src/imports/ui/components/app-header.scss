@@ -1,0 +1,19 @@
+.header__logo {
+  height: 39px;
+  cursor: pointer;
+  @media (max-width: 569px) {
+    height: 10vw;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 74px;
+  @media (max-width: 569px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
